@@ -1,1 +1,17 @@
+name: Ml linear Regression CI
+on:
+  push:
+    branches:
+      - main
+jobs:
+  test:
+    runs-on: ubuntu-latest
 
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: install dependencies
+      - run: pip install -r requirements.txt
+
+      - name: run ml
+      - run: python ml_linear.py 
