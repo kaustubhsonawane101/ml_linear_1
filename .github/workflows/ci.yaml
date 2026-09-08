@@ -13,5 +13,5 @@ jobs:
       - name: install dependencies
         run: pip install -r requirements.txt
 
-      - name: run ml
-        run: python ml_linear.py 
+      - name: run test
+        run: pytest
