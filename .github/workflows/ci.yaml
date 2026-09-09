@@ -15,3 +15,6 @@ jobs:
 
       - name: run test
         run: pytest
+
+      - name: build docker image
+        run: docker build -t ml_linear .
