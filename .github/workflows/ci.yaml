@@ -26,4 +26,4 @@ jobs:
         uses: docker/build-push-action@v7
         with:
           push: true
-          tags: ${{ secrets.username }}/ml_linear
+          tags: ${{ secrets.username }}/ml_linear:latest
