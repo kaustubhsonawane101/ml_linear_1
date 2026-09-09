@@ -1,0 +1,11 @@
+FROM python:3.12
+
+WORKDIR /App
+
+COPY requirements.txt .
+
+RUN pip install --no-cache-dir -r requirement.txt
+
+COPY . . 
+
+CMD ["python", "ml_linear.py"]
